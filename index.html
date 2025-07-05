@@ -13,9 +13,28 @@
       flex-direction: column;
       align-items: center;
     }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #215a8c;
+    }
+    .header h2 {
+      margin: 4px 0;
+      font-size: 18px;
+      color: #3498db;
+    }
+    .header p {
+      margin: 2px 0;
+      font-size: 16px;
+      color: #333;
+    }
     .sinoptico {
       display: flex;
-      align-items: center; /* centrar verticalmente todos los elementos */
+      align-items: center;
       background: #fff;
       padding: 20px;
       border-radius: 8px;
@@ -52,13 +71,13 @@
     }
     .elemento {
       display: flex;
-      align-items: center; /* centrar verticalmente */
+      align-items: center;
       gap: 24px;
     }
     .principal {
       display: flex;
-      align-items: center; /* centrar vertical palabra */
-      justify-content: center; /* centrar horizontal */
+      align-items: center;
+      justify-content: center;
       text-align: center;
       background: #3498db;
       color: #fff;
@@ -124,6 +143,11 @@
   </style>
 </head>
 <body>
+  <div class="header">
+    <h1>Universidad Nacional Abierta y a Distancia (UNAD)</h1>
+    <h2>ETNOPSICOLOGÍA</h2>
+    <p>Estudiante: Angie Jineth Gomez Lozano</p>
+  </div>
   <div class="sinoptico" id="miSinoptico">
     <div class="tema">Etnografía y Métodos<br>Etnográficos</div>
     <div class="estructura">
@@ -231,3 +255,4 @@
   </script>
 </body>
 </html>
+
