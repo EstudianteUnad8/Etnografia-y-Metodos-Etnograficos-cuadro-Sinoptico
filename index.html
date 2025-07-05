@@ -10,8 +10,16 @@
       background: #eef2f6;
       padding: 20px;
       display: flex;
+      justify-content: center;
+    }
+    #capture {
+      display: flex;
       flex-direction: column;
       align-items: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .header {
       text-align: center;
@@ -35,11 +43,6 @@
     .sinoptico {
       display: flex;
       align-items: center;
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
     }
     .tema {
       display: flex;
@@ -128,6 +131,7 @@
       margin-left: 6px;
     }
     button#save-btn {
+      margin-top: 20px;
       padding: 10px 20px;
       background: #28a745;
       color: #fff;
@@ -143,100 +147,102 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Universidad Nacional Abierta y a Distancia (UNAD)</h1>
-    <h2>ETNOPSICOLOGÍA</h2>
-    <p>Estudiante: Angie Jineth Gomez Lozano</p>
-  </div>
-  <div class="sinoptico" id="miSinoptico">
-    <div class="tema">Etnografía y Métodos<br>Etnográficos</div>
-    <div class="estructura">
-      <!-- a) Definición -->
-      <div class="elemento">
-        <div class="principal">a) Definición de<br>la Etnografía</div>
-        <div class="secundarias">
-          <div class="secundaria">
-            <strong>Teoría:</strong><br>
-            “Una descripción de pueblos y culturas […] estrategia de investigación en la antropología social, con objetivo de describir culturas y formas de vida de tribus aisladas” (Denscombe, 1998, p. 68).<br>
-            “Un método de investigación social que permite interactuar con una comunidad para conocer y registrar datos relacionados con su organización, cultura y costumbres” (Peralta Martínez, 2009, p. 37).
+  <div id="capture">
+    <div class="header">
+      <h1>Universidad Nacional Abierta y a Distancia (UNAD)</h1>
+      <h2>ETNOPSICOLOGÍA</h2>
+      <p>Estudiante: Angie Jineth Gomez Lozano</p>
+    </div>
+    <div class="sinoptico">
+      <div class="tema">Etnografía y Métodos<br>Etnográficos</div>
+      <div class="estructura">
+        <!-- a) Definición -->
+        <div class="elemento">
+          <div class="principal">a) Definición de<br>la Etnografía</div>
+          <div class="secundarias">
+            <div class="secundaria">
+              <strong>Teoría:</strong><br>
+              “Una descripción de pueblos y culturas […] estrategia de investigación en la antropología social, con objetivo de describir culturas y formas de vida de tribus aisladas” (Denscombe, 1998, p. 68).<br>
+              “Un método de investigación social que permite interactuar con una comunidad para conocer y registrar datos relacionados con su organización, cultura y costumbres” (Peralta Martínez, 2009, p. 37).
+            </div>
+            <div class="secundaria">
+              <strong>Reflexión:</strong><br>
+              La etnografía actúa como un puente de comprensión: no solo recopilo información, sino que me involucro con respeto para interpretar significados desde la perspectiva de la comunidad estudiada.
+            </div>
           </div>
-          <div class="secundaria">
-            <strong>Reflexión:</strong><br>
-            La etnografía actúa como un puente de comprensión: no solo recopilo información, sino que me involucro con respeto para interpretar significados desde la perspectiva de la comunidad estudiada.
-          </div>
-        </div>
-        <div class="conceptos">
-          <div class="concepto">Denscombe (1998)</div>
-          <div class="concepto">Peralta Martínez (2009)</div>
-        </div>
-      </div>
-      <!-- b) Técnicas etnográficas -->
-      <div class="elemento">
-        <div class="principal">b) Técnicas<br>Etnográficas</div>
-        <div class="secundarias">
-          <div class="secundaria">
-            <strong>Observación participante:</strong><br>
-            Participación pasiva–activa en la vida del grupo, buscando un “punto ciego” para no alterar comportamientos (Peralta Martínez, 2009, pp. 47–48).
-          </div>
-          <div class="secundaria">
-            <strong>Entrevistas:</strong><br>
-            Encuentros cara a cara para profundizar en las perspectivas y significados de los informantes (Taylor & Bogdan, 1984).
-          </div>
-          <div class="secundaria">
-            <strong>Notas de campo:</strong><br>
-            Registro detallado de interacciones y contextos, con descripciones ricas y reflexivas (Hammersley & Atkinson, 1994).
-          </div>
-          <div class="secundaria">
-            <strong>Grabación electrónica:</strong><br>
-            Uso de audio y video para capturar datos verbales y no verbales (Duranti, 2000, p. 167).
+          <div class="conceptos">
+            <div class="concepto">Denscombe (1998)</div>
+            <div class="concepto">Peralta Martínez (2009)</div>
           </div>
         </div>
-        <div class="conceptos">
-          <div class="concepto">Peralta Martínez (2009)</div>
-          <div class="concepto">Taylor & Bogdan (1984)</div>
-          <div class="concepto">Hammersley & Atkinson (1994)</div>
-          <div class="concepto">Duranti (2000)</div>
-        </div>
-      </div>
-      <!-- c) Clasificación según método -->
-      <div class="elemento">
-        <div class="principal">c) Clasificación<br>de Técnicas</div>
-        <div class="secundarias">
-          <div class="secundaria">
-            <strong>Cualitativo:</strong><br>
-            – Observación participante<br>
-            – Entrevistas semiestructuradas y en profundidad<br>
-            – Diario o notas etnográficas<br>
-            – Grabaciones de audio y video
+        <!-- b) Técnicas etnográficas -->
+        <div class="elemento">
+          <div class="principal">b) Técnicas<br>Etnográficas</div>
+          <div class="secundarias">
+            <div class="secundaria">
+              <strong>Observación participante:</strong><br>
+              Participación pasiva–activa en la vida del grupo, buscando un “punto ciego” para no alterar comportamientos (Peralta Martínez, 2009, pp. 47–48).
+            </div>
+            <div class="secundaria">
+              <strong>Entrevistas:</strong><br>
+              Encuentros cara a cara para profundizar en las perspectivas y significados de los informantes (Taylor & Bogdan, 1984).
+            </div>
+            <div class="secundaria">
+              <strong>Notas de campo:</strong><br>
+              Registro detallado de interacciones y contextos, con descripciones ricas y reflexivas (Hammersley & Atkinson, 1994).
+            </div>
+            <div class="secundaria">
+              <strong>Grabación electrónica:</strong><br>
+              Uso de audio y video para capturar datos verbales y no verbales (Duranti, 2000, p. 167).
+            </div>
           </div>
-          <div class="secundaria">
-            <strong>Cuantitativo:</strong><br>
-            – Cuestionarios estandarizados<br>
-            – Registros de frecuencia o conteo de eventos observados
-          </div>
-        </div>
-        <div class="conceptos">
-          <div class="concepto">Hammersley & Atkinson (1994)</div>
-        </div>
-      </div>
-      <!-- d) Importancia -->
-      <div class="elemento">
-        <div class="principal">d) Importancia para<br>el Psicólogo</div>
-        <div class="secundarias">
-          <div class="secundaria">
-            Facilita la comprensión cultural y contextual de los sujetos, esencial para diseñar intervenciones sensibles al entorno (Peralta Martínez, 2009).
-          </div>
-          <div class="secundaria">
-            Permite captar procesos simbólicos y relacionales no evidentes en pruebas estandarizadas (Duranti, 2000).
-          </div>
-          <div class="secundaria">
-            Enriquece la evaluación psicológica al incorporar voces y significados emic de los pacientes (Taylor & Bogdan, 1984).
+          <div class="conceptos">
+            <div class="concepto">Peralta Martínez (2009)</div>
+            <div class="concepto">Taylor & Bogdan (1984)</div>
+            <div class="concepto">Hammersley & Atkinson (1994)</div>
+            <div class="concepto">Duranti (2000)</div>
           </div>
         </div>
-        <div class="conceptos">
-          <div class="concepto">Peralta Martínez (2009)</div>
-          <div class="concepto">Duranti (2000)</div>
-          <div class="concepto">Taylor & Bogdan (1984)</div>
+        <!-- c) Clasificación según método -->
+        <div class="elemento">
+          <div class="principal">c) Clasificación<br>de Técnicas</div>
+          <div class="secundarias">
+            <div class="secundaria">
+              <strong>Cualitativo:</strong><br>
+              – Observación participante<br>
+              – Entrevistas semiestructuradas y en profundidad<br>
+              – Diario o notas etnográficas<br>
+              – Grabaciones de audio y video
+            </div>
+            <div class="secundaria">
+              <strong>Cuantitativo:</strong><br>
+              – Cuestionarios estandarizados<br>
+              – Registros de frecuencia o conteo de eventos observados
+            </div>
+          </div>
+          <div class="conceptos">
+            <div class="concepto">Hammersley & Atkinson (1994)</div>
+          </div>
+        </div>
+        <!-- d) Importancia -->
+        <div class="elemento">
+          <div class="principal">d) Importancia para<br>el Psicólogo</div>
+          <div class="secundarias">
+            <div class="secundaria">
+              Facilita la comprensión cultural y contextual de los sujetos, esencial para diseñar intervenciones sensibles al entorno (Peralta Martínez, 2009).
+            </div>
+            <div class="secundaria">
+              Permite captar procesos simbólicos y relacionales no evidentes en pruebas estandarizadas (Duranti, 2000).
+            </div>
+            <div class="secundaria">
+              Enriquece la evaluación psicológica al incorporar voces y significados emic de los pacientes (Taylor & Bogdan, 1984).
+            </div>
+          </div>
+          <div class="conceptos">
+            <div class="concepto">Peralta Martínez (2009)</div>
+            <div class="concepto">Duranti (2000)</div>
+            <div class="concepto">Taylor & Bogdan (1984)</div>
+          </div>
         </div>
       </div>
     </div>
@@ -245,7 +251,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script>
     document.getElementById('save-btn').addEventListener('click', () => {
-      html2canvas(document.getElementById('miSinoptico')).then(canvas => {
+      html2canvas(document.getElementById('capture')).then(canvas => {
         const link = document.createElement('a');
         link.download = 'cuadro_sinoptico.png';
         link.href = canvas.toDataURL();
@@ -255,4 +261,5 @@
   </script>
 </body>
 </html>
+
 
