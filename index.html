@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuadro Sinóptico: Etnografía y Métodos Etnográficos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #eef2f6;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .sinoptico {
+      display: flex;
+      align-items: center; /* centrar verticalmente todos los elementos */
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .tema {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #215a8c;
+      color: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 30px;
+      min-width: 140px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .estructura {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    .estructura::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -18px;
+      border-left: 3px solid #215a8c;
+    }
+    .elemento {
+      display: flex;
+      align-items: center; /* centrar verticalmente */
+      gap: 24px;
+    }
+    .principal {
+      display: flex;
+      align-items: center; /* centrar vertical palabra */
+      justify-content: center; /* centrar horizontal */
+      text-align: center;
+      background: #3498db;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 6px;
+      min-width: 160px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .secundarias {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .secundaria {
+      background: #d6eaf8;
+      color: #1a5276;
+      padding: 10px 14px;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .secundaria:nth-child(2) {
+      background: #aed6f1;
+    }
+    .secundaria:nth-child(3) {
+      background: #85c1e9;
+      color: #08306b;
+    }
+    .conceptos {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-left: 40px;
+    }
+    .concepto {
+      font-size: 14px;
+      color: #215a8c;
+      position: relative;
+      padding-left: 12px;
+    }
+    .concepto::before {
+      content: '{';
+      position: absolute;
+      left: 0;
+    }
+    .concepto::after {
+      content: '}';
+      margin-left: 6px;
+    }
+    button#save-btn {
+      padding: 10px 20px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    button#save-btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="sinoptico" id="miSinoptico">
+    <div class="tema">Etnografía y Métodos<br>Etnográficos</div>
+    <div class="estructura">
+      <!-- a) Definición -->
+      <div class="elemento">
+        <div class="principal">a) Definición de<br>la Etnografía</div>
+        <div class="secundarias">
+          <div class="secundaria">
+            <strong>Teoría:</strong><br>
+            “Una descripción de pueblos y culturas […] estrategia de investigación en la antropología social, con objetivo de describir culturas y formas de vida de tribus aisladas” (Denscombe, 1998, p. 68).<br>
+            “Un método de investigación social que permite interactuar con una comunidad para conocer y registrar datos relacionados con su organización, cultura y costumbres” (Peralta Martínez, 2009, p. 37).
+          </div>
+          <div class="secundaria">
+            <strong>Reflexión:</strong><br>
+            La etnografía actúa como un puente de comprensión: no solo recopilo información, sino que me involucro con respeto para interpretar significados desde la perspectiva de la comunidad estudiada.
+          </div>
+        </div>
+        <div class="conceptos">
+          <div class="concepto">Denscombe (1998)</div>
+          <div class="concepto">Peralta Martínez (2009)</div>
+        </div>
+      </div>
+      <!-- b) Técnicas etnográficas -->
+      <div class="elemento">
+        <div class="principal">b) Técnicas<br>Etnográficas</div>
+        <div class="secundarias">
+          <div class="secundaria">
+            <strong>Observación participante:</strong><br>
+            Participación pasiva–activa en la vida del grupo, buscando un “punto ciego” para no alterar comportamientos (Peralta Martínez, 2009, pp. 47–48).
+          </div>
+          <div class="secundaria">
+            <strong>Entrevistas:</strong><br>
+            Encuentros cara a cara para profundizar en las perspectivas y significados de los informantes (Taylor & Bogdan, 1984).
+          </div>
+          <div class="secundaria">
+            <strong>Notas de campo:</strong><br>
+            Registro detallado de interacciones y contextos, con descripciones ricas y reflexivas (Hammersley & Atkinson, 1994).
+          </div>
+          <div class="secundaria">
+            <strong>Grabación electrónica:</strong><br>
+            Uso de audio y video para capturar datos verbales y no verbales (Duranti, 2000, p. 167).
+          </div>
+        </div>
+        <div class="conceptos">
+          <div class="concepto">Peralta Martínez (2009)</div>
+          <div class="concepto">Taylor & Bogdan (1984)</div>
+          <div class="concepto">Hammersley & Atkinson (1994)</div>
+          <div class="concepto">Duranti (2000)</div>
+        </div>
+      </div>
+      <!-- c) Clasificación según método -->
+      <div class="elemento">
+        <div class="principal">c) Clasificación<br>de Técnicas</div>
+        <div class="secundarias">
+          <div class="secundaria">
+            <strong>Cualitativo:</strong><br>
+            – Observación participante<br>
+            – Entrevistas semiestructuradas y en profundidad<br>
+            – Diario o notas etnográficas<br>
+            – Grabaciones de audio y video
+          </div>
+          <div class="secundaria">
+            <strong>Cuantitativo:</strong><br>
+            – Cuestionarios estandarizados<br>
+            – Registros de frecuencia o conteo de eventos observados
+          </div>
+        </div>
+        <div class="conceptos">
+          <div class="concepto">Hammersley & Atkinson (1994)</div>
+        </div>
+      </div>
+      <!-- d) Importancia -->
+      <div class="elemento">
+        <div class="principal">d) Importancia para<br>el Psicólogo</div>
+        <div class="secundarias">
+          <div class="secundaria">
+            Facilita la comprensión cultural y contextual de los sujetos, esencial para diseñar intervenciones sensibles al entorno (Peralta Martínez, 2009).
+          </div>
+          <div class="secundaria">
+            Permite captar procesos simbólicos y relacionales no evidentes en pruebas estandarizadas (Duranti, 2000).
+          </div>
+          <div class="secundaria">
+            Enriquece la evaluación psicológica al incorporar voces y significados emic de los pacientes (Taylor & Bogdan, 1984).
+          </div>
+        </div>
+        <div class="conceptos">
+          <div class="concepto">Peralta Martínez (2009)</div>
+          <div class="concepto">Duranti (2000)</div>
+          <div class="concepto">Taylor & Bogdan (1984)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="save-btn">Guardar como imagen</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    document.getElementById('save-btn').addEventListener('click', () => {
+      html2canvas(document.getElementById('miSinoptico')).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'cuadro_sinoptico.png';
+        link.href = canvas.toDataURL();
+        link.click();
+      });
+    });
+  </script>
+</body>
+</html>
